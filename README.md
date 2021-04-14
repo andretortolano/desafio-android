@@ -1,3 +1,4 @@
+[![Validate Master](https://github.com/andretortolano/desafio-android/actions/workflows/master_push.yml/badge.svg?branch=master&event=push)](https://github.com/andretortolano/desafio-android/actions/workflows/master_push.yml)
 # Demo - Knights!
 
 <img src="https://github.com/andretortolano/desafio-android/blob/master/demo.gif" width="300"/>
