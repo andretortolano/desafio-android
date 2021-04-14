@@ -21,8 +21,11 @@ jobs:
       - name: Unit Tests
         run: ./gradlew test
 
-      - name: Android Tests
-        uses: vgaidarji/android-github-actions-emulator@v1.0.1
+      - name:  Android Tests
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 29
+          script: ./gradlew connectedCheck
 
       - name: Build Project
         run: ./gradlew assemble
