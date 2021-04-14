@@ -21,5 +21,8 @@ jobs:
       - name: Unit Tests
         run: ./gradlew test
 
+      - name: Android Tests
+        uses: vgaidarji/android-github-actions-emulator@v1.0.1
+
       - name: Build Project
         run: ./gradlew assemble
