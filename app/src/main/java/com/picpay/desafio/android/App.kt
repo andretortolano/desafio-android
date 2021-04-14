@@ -24,7 +24,7 @@ class App : Application() {
 
     private fun initDependencyInjection() {
         startKoin {
-            androidContext(this@App)
+            androidContext(applicationContext)
 
             arrayListOf(SharedKoin, FeatureHomeKoin)
                 .forEach { it.loadModule(this) }
