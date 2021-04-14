@@ -8,15 +8,13 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
       - uses: actions/checkout@v1
 
-      - name: Set Up JDK
-        uses: actions/setup-java@v1
-        with:
-          java-version: 1.8
+      - name: Configure Build
+        uses: vgaidarji/android-github-actions/build@v1.0.0
 
       - name: Unit Tests
         run: ./gradlew test
